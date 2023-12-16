@@ -14,8 +14,8 @@ Documentation on the approach taken to build this controller is found in the pdf
 _build_ and _run_ bash scripts are provided to compile and run the project.
 
 1. cd into directory
-2. ./build.sh
-3. ./run.sh
+2. `./build.sh`
+3. `./run.sh`
   
 ## Overview
 
