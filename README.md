@@ -15,7 +15,9 @@ This robot controller simulator will divide the robot in 3 main components:
 #### Sensor
 The sensor component will generate tasks every second, where every task will have a **Task ID** and a **Task complexity** given by \[0.1 \leq c \leq 0.5\].
 The ammount of tasks generated every second is given by a poisson distribution:
-\[ P(X = k) = \frac{e^{-\lambda} \cdot \lambda^k}{k!} \]
+
+$P(k) = \frac{e^{-\lambda} \lambda^k}{k!}$
+
 Where _k_ will be the ammount of tasks generated in 1 second (batch).
 
 #### Analyser
@@ -27,9 +29,10 @@ converting the task complexity to time
 The actuator will collect tasks analysed by the analyser, retrieved from a blocking queue (shared resource) and will "_process_" each task,
 converting the task complexity into distance to move the robot, given by the formula:
 
-\[ $\mathbb{Y} = \sqrt{\frac{1}{c}}$ \]
+$\mathbb{Y} = \sqrt{\frac{1}{c}}$
 
 The robot will move within the distance range [0, 1], and will bounce back when reaching the "walls", changing direction in case it has remaining distance to move left
+
 ![b4e8979964022b39aeb7b081ab9db539](https://github.com/ginesmoratalla/concurrent-robot-controller/assets/126341997/72c44547-77b4-4881-a5a7-1dd52f535ed4)
 
 
