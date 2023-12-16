@@ -11,7 +11,7 @@ Robot controller simulator using concurrent programming in Java. Project for Ope
 Documentation on the approach taken to build this controller is found in the pdf '**Operating_Systems_Coursework_1.pdf**'
 
 ## How to run
-_build_ and _run_ bash scripts are provided to compile and run the project.
+_build_ and _run_ shell scripts are provided to compile and run the project.
 
 1. cd into directory
 2. `./build.sh`
