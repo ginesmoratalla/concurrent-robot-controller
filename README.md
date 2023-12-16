@@ -23,7 +23,7 @@ This robot controller simulator will divide the robot in 3 main components:
 ![42eb2c6d1f06038cb2defd23160eb1b5](https://github.com/ginesmoratalla/concurrent-robot-controller/assets/126341997/1d6a51cc-72a5-40ec-a76c-fb146f888515)
 
 ### Sensor
-The sensor component will generate tasks every second, where every task will have a **Task ID** and a **Task complexity** given by \[0.1 \leq c \leq 0.5\].
+The sensor component will generate tasks every second, where every task will have a **Task ID** and a **Task complexity** given by 0.1 $\leq c \leq 0.5$.
 The ammount of tasks generated every second is given by a poisson distribution:
 
 $P(k) = \frac{e^{-\lambda} \lambda^k}{k!}$
